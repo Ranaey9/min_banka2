@@ -1,0 +1,325 @@
+/* arka plan */
+.login-background {
+    background-color: linear-gradient(to bottom right, #e8eef7, #cddaf1);
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-background-color: linear-gradient(to bottom right, #e8eef7, #cddaf1);
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* giriş */
+.login-box {
+    background-color: white;
+    background-origin: 18;
+    padding: 40 50 40 50;
+    min-width: 360;
+    -fx-background-color: white;
+    -fx-background-radius: 18;
+    -fx-padding: 40 50 40 50;
+    -fx-spacing: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.18), 25, 0.2, 0, 8);
+    -fx-alignment: center;
+    -fx-min-width: 360;
+}
+
+/*başlık */
+.bank-title {
+    font-size: 26px;
+    font-weight: 700;
+    -fx-font-size: 26px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #0d47a1;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 8, 0.2, 0, 3);
+}
+
+/* kutulsr*/
+.input-field {
+    background-color: #f4f6fb;
+    border-color: #d1d9e6;
+    border-radius: 10;
+    background-origin: 10;
+    font-size: 14px;
+    padding: 10;
+    fill-rule: #1f2937;
+    border-width: 240;
+    -fx-background-color: #f4f6fb;
+    -fx-border-color: #d1d9e6;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-font-size: 14px;
+    -fx-padding: 10;
+    -fx-text-fill: #1f2937;
+    -fx-pref-width: 240;
+}
+
+.input-field:focused {
+    border-color: #2563eb;
+    background-color: white;
+    offset: dropshadow(gaussian, rgba(37, 99, 235, 0.2), 5, 0.2, 0, 0);
+    -fx-border-color: #2563eb;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(37, 99, 235, 0.2), 5, 0.2, 0, 0);
+}
+
+/* Buton */
+.button {
+    background-color: #0072C6;
+    fill-rule: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8 20 8 20;
+    background-origin: 5;
+    cursor: hand;
+    offset: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0.0, 0, 1);
+    -fx-background-color: #0072C6;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 20 8 20;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0.0, 0, 1);
+}
+
+
+.login-button:hover {
+    background-color: linear-gradient(to right, #3b82f6, #2563eb);
+    offset: dropshadow(gaussian, rgba(59, 130, 246, 0.4), 12, 0.3, 0, 4);
+    -fx-background-color: linear-gradient(to right, #3b82f6, #2563eb);
+    -fx-effect: dropshadow(gaussian, rgba(59, 130, 246, 0.4), 12, 0.3, 0, 4);
+}
+
+/* foot en alt ksım */
+.footer {
+    font-size: 11px;
+    fill-rule: #9aa3b2;
+    padding: 10;
+    -fx-font-size: 11px;
+    -fx-text-fill: #9aa3b2;
+    -fx-padding: 10;
+}
+
+/* menu kutuları */
+.Menu-root {
+    background-color: linear-gradient(to bottom right, #e8eef7, #cddaf1);
+    font-family: "Segoe UI", "Arial", sans-serif;
+    padding: 20;
+    -fx-background-color: linear-gradient(to bottom right, #e8eef7, #cddaf1);
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-padding: 20;
+}
+
+/* Kullanıcı Label */
+.user-label {
+    font-size: 16px;
+    font-weight: bold;
+    fill-rule: #1f456e;
+    padding: 0 0 10 0;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f456e;
+    -fx-padding: 0 0 10 0;
+}
+
+/* Başlık */
+.title-label {
+    font-size: 22px;
+    font-weight: bold;
+    fill-rule: #0d47a1;
+    padding: 0 0 20 0;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0d47a1;
+    -fx-padding: 0 0 20 0;
+}
+
+.scroll-pane {
+    background-color: transparent;
+    background-origin: 0;
+    padding: 5;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 5;
+}
+
+.scroll-pane .viewport {
+    background-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    background-color: transparent;
+    border-width: 10px;
+    -fx-background-color: transparent;
+    -fx-pref-width: 10px;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    background-color: #1f456e;
+    background-origin: 2;
+    background-origin: 5;
+    -fx-background-color: #1f456e;
+    -fx-background-insets: 2;
+    -fx-background-radius: 5;
+}
+
+.button-container {
+    align-content: center;
+    padding: 15;
+    padding: 10;
+    -fx-alignment: center;
+    -fx-spacing: 15;
+    -fx-padding: 10;
+}
+
+/* Menü Butonları */
+.button-container>Button {
+    border-width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+    line-height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    background-color: #1f456e;
+    fill-rule: white;
+    font-size: 16px;
+    font-weight: 600;
+    background-origin: 25;
+    cursor: hand;
+    offset: dropshadow(gaussian, rgba(0, 0, 0, 0.18), 6, 0.2, 0, 3);
+    border-color: transparent;
+    transition: all 0.2s ease-in-out;
+    -fx-pref-width: 250px;
+    -fx-min-width: 250px;
+    -fx-max-width: 250px;
+    -fx-pref-height: 50px;
+    -fx-min-height: 50px;
+    -fx-max-height: 50px;
+    -fx-background-color: #1f456e;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-background-radius: 25;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.18), 6, 0.2, 0, 3);
+    -fx-border-color: transparent;
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+
+.button-container>Button:hover {
+    background-color: linear-gradient(to right, #2563eb, #3b82f6);
+    offset: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 8, 0.2, 0, 4);
+    scale: 1.05;
+    scale: 1.05;
+    -fx-background-color: linear-gradient(to right, #2563eb, #3b82f6);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 8, 0.2, 0, 4);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/*  Transfer  */
+.page-root {
+    background-color: linear-gradient(180deg, #f6fbff 0%, #eef6ff 100%);
+    font-family: "Segoe UI", "Inter", Arial, sans-serif;
+    -fx-background-color: linear-gradient(180deg, #f6fbff 0%, #eef6ff 100%);
+    -fx-font-family: "Segoe UI", "Inter", Arial, sans-serif;
+}
+
+/* Başlık */
+.page-title {
+    font-size: 22px;
+    font-weight: 700;
+    fill-rule: #0f3b66;
+    padding: 0 0 6 0;
+    -fx-font-size: 22px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #0f3b66;
+    -fx-padding: 0 0 6 0;
+}
+
+.form-field {
+    border-width: 420px;
+    min-width: 320px;
+    max-width: 520px;
+    line-height: 44px;
+    background-color: white;
+    background-origin: 12;
+    border-radius: 12;
+    border-color: transparent;
+    padding: 0 12 0 12;
+    font-size: 14px;
+    offset: dropshadow(gaussian, rgba(15, 59, 102, 0.08), 8, 0.1, 0, 2);
+    -fx-pref-width: 420px;
+    -fx-min-width: 320px;
+    -fx-max-width: 520px;
+    -fx-pref-height: 44px;
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: transparent;
+    -fx-padding: 0 12 0 12;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(15, 59, 102, 0.08), 8, 0.1, 0, 2);
+}
+
+.amount-field {
+    font-weight: 600;
+    text-overflow: derive(-fx-control-inner-background, -40%);
+    -fx-font-weight: 600;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -40%);
+}
+
+.primary-btn {
+    background-color: linear-gradient(to bottom right, #2f9cff, #0f6ee6);
+    fill-rule: white;
+    font-weight: 700;
+    border-width: 150px;
+    line-height: 44px;
+    background-origin: 22;
+    offset: dropshadow(gaussian, rgba(15, 110, 230, 0.18), 10, 0.12, 0, 3);
+    cursor: hand;
+    -fx-background-color: linear-gradient(to bottom right, #2f9cff, #0f6ee6);
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 44px;
+    -fx-background-radius: 22;
+    -fx-effect: dropshadow(gaussian, rgba(15, 110, 230, 0.18), 10, 0.12, 0, 3);
+    -fx-cursor: hand;
+}
+
+.primary-btn:hover {
+    -fx-translate-y: -2;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    border-color: #d3e3ff;
+    border-width: 1.2;
+    fill-rule: #0f3b66;
+    border-width: 100px;
+    line-height: 40px;
+    background-origin: 20;
+    border-radius: 20;
+    -fx-background-color: transparent;
+    -fx-border-color: #d3e3ff;
+    -fx-border-width: 1.2;
+    -fx-text-fill: #0f3b66;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+}
+
+.result-label {
+    font-size: 13px;
+    padding: 8 10 0 10;
+    -fx-font-size: 13px;
+    -fx-padding: 8 10 0 10;
+}
+
+@media screen and (max-width: 480px) {
+    .form-field {
+        -fx-pref-width: 320px;
+    }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+    xmlns:fx="http://javafx.com/fxml"
+    fx:controller="com.example.TransferController"
+    alignment="CENTER"
+    spacing="15"
+    style="-fx-padding: 30;">
+
+    <Label text="Transfer İşlemi" style="-fx-font-size: 24;" />
+
+    <TextField fx:id="miktarField" promptText="Gönderilecek miktarı girin" />
+
+    <Button text="Transfer Et" onAction="#transferEt" />
+
+    <Label fx:id="sonucLabel" text="" style="-fx-font-size: 16; -fx-text-fill: green;" />
+
+    <Button text="Geri" onAction="#goBack" />
+ 
+</VBox>
