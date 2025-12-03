@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="com.example.BakiyeController"
+  alignment="CENTER"
+  spacing="20"
+  style="-fx-padding: 30;">
+
+  <Label text="Bakiye Sorgulama" style="-fx-font-size: 24;" />
+
+  <Label fx:id="bakiyeLabel" text="0 ₺" style="-fx-font-size: 20;" />
+
+  <Button text="Geri" onAction="#goBack" />
+
+</VBox>

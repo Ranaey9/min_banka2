@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.PortfoyController"
+            fitToWidth="true"
+            styleClass="scroll-pane">
+
+    <VBox spacing="15">
+
+        <VBox fx:id="menuContainer" spacing="10" styleClass="menu-root">
+            <Label text="Portföy Menüsü" styleClass="title-label"/>
+            <VBox spacing="10" styleClass="button-container">
+                <Button text="Nakit" styleClass="portfoy-box" onAction="#openNakit"/>
+                <Button text="Hisse" styleClass="portfoy-box" onAction="#openHisse"/>
+                <Button text="Fon" styleClass="portfoy-box" onAction="#openFon"/>
+                <Button text="Vadeli Mevduat" styleClass="portfoy-box" onAction="#openVadeli"/>
+                <Button text="Döviz / Altın" styleClass="portfoy-box" onAction="#openDovizAltin"/>
+                <Button text="BES" styleClass="portfoy-box" onAction="#openBES"/>
+                <Button text="VoIP" styleClass="portfoy-box" onAction="#openVoip"/>
+                <Button text="Yatırım Ürünleri" styleClass="portfoy-box" onAction="#openYatirim"/>
+                <Button text="Diğer Banka Hesapları" styleClass="portfoy-box" onAction="#openDigerHesaplar"/>
+                <Button text="Geri" onAction="#backToAnaMenu"/>
+            </VBox>
+        </VBox>
+
+        <VBox fx:id="nakitPane" spacing="10" visible="false">
+            <Label text="Nakit Menüsü"/>
+            <Button text="Geri" styleClass="portfoy-back-button" onAction="#backToPortfoy"/>
+        </VBox>
+
+        <VBox fx:id="hissePane" spacing="10" visible="false">
+            <Label text="Hisse Menüsü"/>
+            <Button text="Geri" styleClass="portfoy-back-button" onAction="#backToPortfoy"/>
+        </VBox>
+
+        <VBox fx:id="fonPane" spacing="10" visible="false">
+            <Label text="Fon Menüsü"/>
+            <Button text="Geri" styleClass="portfoy-back-button" onAction="#backToPortfoy"/>
+        </VBox>
+
+        <VBox fx:id="vadeliPane" spacing="10" visible="false">
+            <Label text="Vadeli Mevduat Menüsü"/>
+            <Button text="Geri" styleClass="portfoy-back-button" onAction="#backToPortfoy"/>
+        </VBox>
+
+    </VBox>
+</ScrollPane>

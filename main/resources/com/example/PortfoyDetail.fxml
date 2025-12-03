@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.NakitController"
+      spacing="20"
+      styleClass="page-root"
+      alignment="CENTER">
+
+    <Label text="Nakit İşlemleri" styleClass="page-title"/>
+
+    <VBox spacing="10" styleClass="fatura-payment-pane">
+        <!-- Örnek input -->
+        <TextField promptText="Miktar Girin" styleClass="fatura-input-field"/>
+
+        <!-- Ödeme butonu -->
+        <Button text="Öde" styleClass="fatura-pay-button"/>
+
+        <!-- Geri butonu -->
+        <Button text="Geri" styleClass="fatura-back-button" onAction="#goBack"/>
+    </VBox>
+
+</VBox>
