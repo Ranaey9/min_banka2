@@ -1,0 +1,53 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.FaturaOdemeController"
+      spacing="15"
+      style="-fx-padding: 30;"
+      alignment="TOP_CENTER">
+
+    <Label text="Fatura Ödeme Merkezi" styleClass="fatura-title-label"/>
+
+    <FlowPane hgap="15" vgap="15" alignment="CENTER" maxWidth="350">
+        <Button text="ELEKTRİK" userData="Elektrik" onAction="#handleFaturaSecim" styleClass="fatura-button"/>
+        <Button text="SU" userData="Su" onAction="#handleFaturaSecim" styleClass="fatura-button"/>
+        <Button text="İNTERNET" userData="Internet" onAction="#handleFaturaSecim" styleClass="fatura-button"/>
+        <Button text="TELEFON" userData="Telefon" onAction="#handleFaturaSecim" styleClass="fatura-button"/>
+        <Button text="TV" userData="TV" onAction="#handleFaturaSecim" styleClass="fatura-button"/>
+        <Button text="DOĞALGAZ" userData="Dogalgaz" onAction="#handleFaturaSecim" styleClass="fatura-button"/>
+    </FlowPane>
+
+    <Separator prefWidth="300"/>
+
+    <VBox fx:id="paymentPane"
+          visible="false"
+          spacing="12"
+          alignment="CENTER"
+          styleClass="fatura-payment-pane"
+          minWidth="260"
+          maxWidth="300">
+
+        <Label fx:id="secilenFaturaLabel" text="Lütfen bir fatura seçiniz"/>
+
+        <HBox spacing="10" alignment="CENTER">
+            <TextField fx:id="miktarField" promptText="Ödenecek tutar (TL)" styleClass="fatura-input-field"/>
+            <Button text="ÖDE" onAction="#ode" styleClass="fatura-pay-button"/>
+        </HBox>
+
+        <Label fx:id="sonucLabel" styleClass="fatura-result-label"/>
+
+    </VBox>
+
+    <Region VBox.vgrow="ALWAYS"/>
+
+    <Button text="Geri " onAction="#goBack" styleClass="fatura-back-button"/>
+
+</VBox>
